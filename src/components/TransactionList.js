@@ -3,8 +3,9 @@ import { Transaction } from './Transaction';
 
 import { GlobalContext } from '../context/GlobalState';
 
-const TransactionList = () => {
+export const TransactionList = () => {
   const { transactions } = useContext(GlobalContext);
+  
 
   return (
     <>
@@ -15,4 +16,3 @@ const TransactionList = () => {
     </>
   )
 }
-export default TransactionList
